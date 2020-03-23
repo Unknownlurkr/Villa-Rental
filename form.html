@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Booking Process...</title>
+		<link rel="stylesheet" href="css/form.css">
+		<script src="form2.js"></script>
+		<script src="js/travel.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Easy Online Payment</h1>
+		</header>
+		<main>
+			<h2>Edit Payment Information</h2>
+			<div id="form">
+			<form>
+				<input type="hidden" name="form_sent" value="1" />
+				<fieldset>
+				<input type="date" name="Arrive"/>
+				<input type="date" name="Depart"/>
+				<label class"funky">How many Guests?</label>
+				<select id="quantity" name="quantity">
+				<option value="select">Adults...</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				</select>
+				<select id="quantity" name="quantity">
+				<option value="select">Children...</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				</select>
+				<select id="option" name="select">
+<option id="myOption" value='1'>Toronto</option>
+<option value ='2'>Thailand</option>
+<option value = '3'>Musoka</option>
+</select>
+<button onclick="myFunction()">Try it</button>
+
+
+</form>
+				<p>Infants stay for free</p>
+				</fieldset>
+				<form action="input" id="booking" method="get">
+				<fieldset>
+					<legend> Personal Information </legend>
+					<div>
+						<label>First Name</label><input type="text" id="fname" name="fname" maxlength="20" size="60" placeholder="First Name" required="required">
+					</div>
+					<div>
+						<label>Last Name</label><input type="text" id="lname" name="lname" maxlength="20" size="60" placeholder="Last Name" required="required">
+					</div>
+					</fieldset>
+					<fieldset>
+					<div>
+						<label for="address">Address Line 1</label>
+						<input id="address" type="text" name="address" required />
+					</div>
+					<div>
+						<label for="address2">Address Line 2</label>
+						<input id="address2" type="text" name="address2" />
+					</div>
+					<div>
+						<label for="province">Province</label>
+						<select id="province" name="province">
+							<option value="choose">choose…</option>
+							<option value="AB">Alberta</option>
+							<option value="BC">British Colombia</option>
+							<option value="ON">Ontario</option>
+							<option value="MB">Manitoba</option>
+							<option value="NB">New Brunswick</option>
+							<option value="NL">Newfoundland</option>
+							<option value="NT">Northwest Territories</option>
+							<option value="NS">Nova Scotia</option>
+							<option value="NV">Nunavut</option>
+							<option value="PE">Prince Edward Island</option>
+							<option value="PQ">Québec</option>
+							<option value="SK">Saskatchewan</option>
+							<option value="YK">Yukon Territory</option>
+						</select>
+					</div>
+					<div>
+						<label for="phone">Phone</label>
+						<input id="phone" type="tel" name="phone" />
+					</div>
+					<div>
+						<label for="email">Email</label>
+						<input id="email" type="email" name="email" />
+					</div>
+
+					<div>
+						<label for="password">Password</label>
+
+					</div>
+					</fieldset>
+					<fieldset>
+					<legend>Credit Card Details</legend>
+					<input type="radio" name="cctype" id="amex" value="amex" />
+					<label for="amex"> American Express</label>
+
+					<input type="radio" name="cctype" id="mc" value="mc" />
+					<label for="mc">MasterCard</label>
+					<input type="radio" name="cctype" id="visa" value="visa" />
+					<label for="visa">VISA</label>
+					<div>
+						<label>Name on The Card</label><input type="text" id="fname" name="fname" maxlength="20" size="60" placeholder="First Name" required="required">
+					</div>
+					<div>
+						<label for="ccnumber">Credit Card Number</label>
+						<input id="ccnumber" type="text" name="ccnumber" value="" />
+					</div>
+					<div>
+						<label for="ccexpireyear">Expiration Year</label>
+						<select name="ccexpireyear"
+						id="ccexpireyear">
+							<option value="2020">2020</option>
+							<option value="2021">2021</option>
+							<option value="2022">2022</option>
+							<option value="2023">2023</option>
+							<option value="2024">2024</option>
+							<option value="2025">2025</option>
+							<option value="2026">2026</option>
+							<option value="2027">2027</option>
+							<option value="2028">2028</option>
+							<option value="2029">2029</option>
+							<option value="2030">2030</option>
+							<option value="2031">2031</option>
+						</select>
+
+
+					</div>
+					<div>
+						<label for="ccexpiremonth">Expiration Month</label>
+						<select name="ccexpiremonth" id="ccexpiremonth">
+							<option value="choose">choose…</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select>
+					</div>
+				</fieldset>
+				<button type"submit">give me your money </button>
+			</form>
+			</div>
+		</main>
+		<footer>
+		<p><small></small></p>
+		</footer>
+	</body>
+</html>

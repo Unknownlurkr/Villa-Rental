@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Page Title</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/browse-villas.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="header">
+		<div class="image-container">
+			<div class="text">Book a luxury stay today!</div>
+		</div>
+	</div>
+	<div class="navbar">
+		<a href="index.html">Home</a>
+		<a href="browse-villas.html">Featured Villas</a>
+		<a href="about.html">About</a>
+		<a href="contact.html">Contact Us!</a>
+	</div>
+
+	<div class="date">
+		<div class="side">
+			<h2>Choose a Villa</h2>
+			<p>1. Choose a Villa you would like to rent</p>
+			<p>2. If available select the date that works for you.</p>
+			<p>3. Sit back, Relax and enjoy your luxury vacation in a luxury villa. </p>
+		</div>
+	</div>
+	<div class="container">
+		<div class="places">
+			<div class="place-container">
+				<button type="button" id="btn-toronto">View Listing</button>
+				<fieldset class="inline-fieldset" id="toronto-fieldset">
+					<div>
+						<!-- <a href="form.html" alt="Cottage" /> -->
+						<img src="img/toronto.jpg" />
+					</div>
+					<button onclick="tdot()">Click here to save 20%</button>
+				</fieldset>
+			</div>
+		<div class="place-container">
+			<button type="button" id="btn-thailand" name="button">View Listing</button>
+			<fieldset class="inline-fieldset" id="thailand-fieldset">
+				<div>
+					<!-- <a href="form.html" alt="Thailand" /> -->
+					<img src="img/sunset.jpg">
+				</div>
+				<button onclick="thai()">Click here to save 20%</button>
+			</fieldset>
+		<div class="place-container">
+			<button type="button" id="btn-cottage" name="button">View Listing</button>
+			<fieldset id="cottage-fieldset">
+				<div>
+					<img src="img/home.jpg"/>
+					<!-- <a href="form.html" alt="Bahamas"/> -->
+				</div>
+				<button onclick="cottage()">Click here to save 20%</button>
+			</fieldset>
+			</div>
+		</div>
+	</div>
+	<script src="from2.js"></script>
+
+</body>
+
+</html>
